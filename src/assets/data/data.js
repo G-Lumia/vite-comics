@@ -1,70 +1,66 @@
 const links = [ 
     {
     title : 'Characters',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Comics',
-    link : '#'
-    },
-    {
-    title : 'Characters',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Movies',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Tv',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Games',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Collectibles',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Videos',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Fans',
-    link : '#'
+    url : '#'
     },
     {
     title : 'News',
-    link : '#'
+    url : '#'
     },
     {
     title : 'Shop',
-    link : '#'
+    url : '#'
     }
 ];
 
 const images = [
     {
         title : 'Digital Comics',
-        src : './src/assets/img/buy-comics-digital-comics.png'
+        src : '../src/assets/img/buy-comics-digital-comics.png'
     },
     {
         title : 'DC Merchandise',
-        src : './src/assets/img/buy-comics-merchandise.png'
+        src : '../src/assets/img/buy-comics-merchandise.png'
     },
     {
         title : 'Subscription',
-        src : './src/assets/img/buy-comics-subscriptions.png'
+        src : '../src/assets/img/buy-comics-subscriptions.png'
     },
     {
         title : 'Comic Shop Locator',
-        src : './src/assets/img/buy-comics-shop-locator.png'
+        src : '../src/assets/img/buy-comics-shop-locator.png'
     },
     {
-        title : 'Dc Power Visa',
-        src : './src/assets/img/buy-dc-power-visa.png'
+        title : 'DC Power Visa',
+        src : '../src/assets/img/buy-dc-power-visa.svg'
     }
 ]
 
@@ -75,45 +71,45 @@ const footerLinks = [
         [
             {
                 title: 'Characters',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Comics',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Movies',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'TV',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Games',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Videos',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'News',
-                link: '#'
+                url: '#'
             }
         ]
     },
     {
-        title : 'Shop DC',
+        title : 'Shop',
         links: 
         [
             {
                 title: 'Shop DC',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Shop DC Collectibles',
-                link: '#'
+                url: '#'
             }
         ]
     },
@@ -123,47 +119,47 @@ const footerLinks = [
         [
             {
                 title: 'Terms of Use',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Privacy Policy (New)',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Ad Choices',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Advertising',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Jobs',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Subscriptions',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Talent Workshops',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'CPSC Certificates',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Ratings',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Shop Help',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'Contact Us',
-                link: '#'
+                url: '#'
             }
         ]
     },
@@ -173,24 +169,26 @@ const footerLinks = [
         [
             {
                 title: 'DC',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'MAD Magazine',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'DC Kids',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'DC Universe',
-                link: '#'
+                url: '#'
             },
             {
                 title: 'DC Power Visa',
-                link: '#'
+                url: '#'
             }
         ]
     },
-]
+];
+
+export { links, images, footerLinks }
