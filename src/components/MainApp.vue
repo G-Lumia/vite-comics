@@ -30,6 +30,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   main{
+    height:45%;
     background-color: black;
     height:fit-content;
   }
@@ -42,6 +43,6 @@ export default {
     gap:40px;
   }
    .imageLink img{
-    width:50px;
+    width:80px;
    }
 </style>

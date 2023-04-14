@@ -1,7 +1,7 @@
 <template lang="">
     <footer>
-        <div class="foot container d-flex justify-content-start align-items-center">
-            <div class="links d-flex gap-5">
+        <div class="foot d-flex align-items-center">
+            <div class="container links d-flex gap-5 justify-content-start py-3">
                 <div>
                     <div>
                         <h1 class="py-3">
@@ -47,39 +47,57 @@
             </div>
             <img class="logo" src="../assets/img/dc-logo-bg.png" alt="logo bg">
         </div>
+        <div class="footerLinks py-5">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="signUp border-primary p-3">
+                    <a class="text-light" href="#">
+                        Sign Up Now!    
+                    </a>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                    <a href="#" class="text-primary"> Follow Us </a>
+                    <div class="d-flex gap-2">
+                        <img v-for="(image, index) in footsPics" :key="index" :src= image.src alt="image{{index}}">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
   </template>
   <script>
   import {footerLinks} from '../assets/data/data'
+  import {footerImages} from '../assets/data/data'
   export default {
     name : "FooterApp",
     data(){
     return {
-      foots : footerLinks
+      foots : footerLinks,
+      footsPics : footerImages
     }
   }
   }
   </script>
   <style lang="scss" scoped>
     footer{
-        height: 45vh;
+        max-height:40vh; height: fit-content;
+    }
+    
+    .foot{
         background-image: url(../assets/img/footer-bg.jpg);
         background-size:cover;
-    }
-
-    .foot{
-        height:100%;
-        overflow: hidden;
+        height:80%;
         position:relative;
+        overflow: hidden;
+        
     }
 
     .links{
-        height: 80%;
+        height: 100%;
     }
     .logo{
         position:absolute;
-        height: 150%;
-        right:0;
+        height: 130%;
+        right:10%;
     }
 
     h1{
@@ -90,7 +108,28 @@
         color:gray;
         font-size: 1.4rem;
         &:hover{
-            color:blue;
+            color:lightblue;
         }
+    }
+    .footerLinks{
+        background-color: darkgrey;
+        height: 20%;
+    }
+
+    .footerLinks .container{
+        height: 100%;
+    }
+
+    .footerLinks img{
+        width:50px;
+    }
+
+    .footerLinks a{
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+
+    .signUp{
+        border : 8px solid black;
     }
   </style>

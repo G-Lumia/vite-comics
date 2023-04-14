@@ -191,4 +191,19 @@ const footerLinks = [
     },
 ];
 
-export { links, images, footerLinks }
+const footerImages = [
+    {
+        src : '../src/assets/img/footer-facebook.png'
+    },
+    {
+        src : '../src/assets/img/footer-periscope.png'
+    },
+    {
+        src : '../src/assets/img/footer-twitter.png'
+    },
+    {
+        src : '../src/assets/img/footer-youtube.png'
+    }
+]
+
+export { links, images, footerLinks, footerImages }
