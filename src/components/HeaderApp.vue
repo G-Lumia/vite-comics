@@ -7,15 +7,15 @@
   </header>
 </template>
 <script>
-import {links} from '../assets/data/data'
-export default {
-  name : "HeaderApp",
-  data(){
-    return {
-      navbar : links
+  import {links} from '../assets/data/data'
+  export default {
+    name : "HeaderApp",
+    data(){
+      return {
+        navbar : links
+      }
     }
   }
-}
 </script>
 <style lang="scss" scoped>
 header {
@@ -42,7 +42,7 @@ a {
       bottom:0;
       width:100%;
       height:8px;
-      background-color: blue;
+      background-color: #0C7CEC
   }
 }
 </style>

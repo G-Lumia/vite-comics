@@ -65,17 +65,17 @@
     </footer>
   </template>
   <script>
-  import {footerLinks} from '../assets/data/data'
-  import {footerImages} from '../assets/data/data'
-  export default {
-    name : "FooterApp",
-    data(){
-    return {
-      foots : footerLinks,
-      footsPics : footerImages
+    import {footerLinks} from '../assets/data/data'
+    import {footerImages} from '../assets/data/data'
+    export default {
+        name : "FooterApp",
+        data(){
+        return {
+        foots : footerLinks,
+        footsPics : footerImages
+        }
     }
-  }
-  }
+    }
   </script>
   <style lang="scss" scoped>
     footer{
