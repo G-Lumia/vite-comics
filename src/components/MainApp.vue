@@ -1,9 +1,8 @@
 <template lang="">
   <main>
-    <div class="container py-5">
-      <h1>
-        content goes here
-      </h1>
+    <div class=" container d-flex justify-content-center py-5 row">
+      <PropApp v-for="(comic, index) in comics" :key="index" :thumb="comic.thumb" :series="comic.series" 
+      :price="comic.price" :type="comic.type"/>
     </div>
     <section class="bg-primary py-5">
       <div class="container d-flex justify-content-between align-items-center">
@@ -18,15 +17,22 @@
   </main>
 </template>
 <script>
-import {images} from '../assets/data/data'
-export default {
-  name : "MainApp",
-  data(){
-    return {
-      pack : images
-    }
+  import {images} from '../assets/data/data';
+  import comicsJson from '../assets/data/dc-comics.json' assert {type: 'json'};
+  import PropApp from './PropApp.vue';
+  export default {
+    name : "MainApp",
+    components : 
+    {
+      PropApp
+    },
+    data(){
+      return {
+        pack : images,
+        comics : comicsJson
+      }
+    },
   }
-}
 </script>
 <style lang="scss" scoped>
   main{
